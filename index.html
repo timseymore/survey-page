@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>      
+      <header class="header">
+        <h1 id="title"><u>Customer Survey Form</u></h1>
+        <p id="description"><strong>Thank you for filling out this short survey</strong></p>
+      </header>      
+      <div id="form-box">        
+        <form id="survey-form">          
+          <div class="form-entry">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input"
+              placeholder="Enter your name"
+              required
+            />
+          </div>          
+          <div class="form-entry">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>          
+          <div class="form-entry">
+            <label id="number-label" for="number">Age<span class="note">(optional)</span></label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              min="10"
+              max="99"
+              class="input"
+              placeholder="Age"
+            />
+          </div>          
+          <div class="form-entry">
+            <label id="dropdown-label" for "dropdown">Where did hear about us?</label>
+            <select
+              name="dropdown"
+              id="dropdown"
+              class="input"
+              required >
+              <option disabled selected value>Select an option</option>
+              <option value="family-friend">Family / Friend</option>
+              <option value="online">Online</option> 
+              <option value="other">Other</option>                    
+            </select>
+          </div>          
+          <div class="form-entry">
+            <label id="radio-label">How likely are you to recommend us to a friend?</label> 
+            <label for="very" class="radio-label">
+              <input id="very" value="very" type="radio" name="recommend">Very likely</label> 
+            <label for="maybe" class="radio-label">
+              <input id="maybe" value="maybe" type="radio" name="recommend">Maybe</label>   
+            <label for="not" class="radio-label">
+              <input id="not" value="not" type="radio" name="recommend">Not sure</label>     
+          </div>
+          <div class="form-entry">
+            <label id="check-label">What would you like to see improved?<span class="note">(check all that apply)</span></label>
+<label for="cust-serv" class="radio-label"><input id="cust-serv" value="cust-serv" type="checkbox" name="improvements">Customer service</label>
+            <label for="website" class="radio-label"><input id="website" value="website" type="checkbox" name="improvements">Website</label>
+            <label for="tech-sup" class="radio-label"><input id="tech-sup" value="tech-sup"  type="checkbox" name="improvements">Tech support</label>
+            <label for="dev" class="radio-label"><input id="dev" value="dev" type="checkbox" name="improvements">Development</label>           
+            <label for="sales" class="radio-label"><input id="sales" value="sales" type="checkbox" name="improvements">Sales / Billing</label>
+          </div>           
+          <div class="form-entry">
+            <label class="form-label">Any comments or suggestions?</label>
+              <textarea
+                        id="comments"
+                        name="suggest"
+                        value="suggest"
+                        placeholder=<id="text">Please type any suggestions here...
+              </textarea>
+          </div>
+          <div class="form-entry">
+            <button type="submit" id="submit" action="#">Submit</button>
+        </div>            
+        </form>
+      </div>      
+    </main>     
+  </body>  
+</html>
