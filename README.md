@@ -1,2 +1,2 @@
 # survey-page
-a customer survey form web page 
+Example of a customer survey form web page 
